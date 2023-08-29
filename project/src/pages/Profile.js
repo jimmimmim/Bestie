@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { GoHeart, GoBookmark, GoPencil, GoUnmute, GoCommentDiscussion } from "react-icons/go";
 
 
