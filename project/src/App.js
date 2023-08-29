@@ -4,9 +4,12 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import NavBar from "./components/NavBar";
 
-import Main from "./pages/Main";
+import Home from "./pages/Home";
+import MapPage from './pages/MapPage';
+import MyPlace from './pages/MyPlace';
+import Profile from './pages/Profile';
 import NoPage from "./pages/NoPage";
-import About from './pages/About';
+import KakaoRedirectHandler from './services/KakaoRedirectHandeler';
 
 import './App.css';
 
@@ -18,10 +21,13 @@ function App() {
           <CSSTransition timeout={300} classNames="fade">
             <Routes>
               <Route path="/" element={<NavBar />}>
-                <Route index element={<Main />} />
-                <Route path="main" element={<Main />} />
-                <Route path="about" element={<About />} />
+                <Route index element={<Home />} />
+                <Route path="home" element={<Home />} />
+                <Route path="mapPage" element={<MapPage />} />
+                <Route path="myPlace" element={<MyPlace />} />
+                <Route path="profile" element={<Profile />} />
                 <Route path="*" element={<NoPage />} />
+                <Route path="/auth/kakao/callback" component={KakaoRedirectHandler} />
               </Route>
             </Routes>
           </CSSTransition>
