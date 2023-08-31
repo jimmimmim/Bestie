@@ -15,7 +15,7 @@ function Map() {
 
 
     return (
-        <div id="map" className="w-[360px] h-[780px]"></div>
+        <div id="map" className="w-screen h-screen"></div>
     )
 }
 

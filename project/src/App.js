@@ -9,6 +9,8 @@ import MapPage from './pages/MapPage';
 import MyPlace from './pages/MyPlace';
 import Profile from './pages/Profile';
 import NoPage from "./pages/NoPage";
+import APItestPage from "./pages/APItestPage";
+
 import KakaoRedirectHandler from './services/KakaoRedirectHandeler';
 
 import './App.css';
@@ -26,6 +28,7 @@ function App() {
                 <Route path="mapPage" element={<MapPage />} />
                 <Route path="myPlace" element={<MyPlace />} />
                 <Route path="profile" element={<Profile />} />
+                <Route path="apitest" element={<APItestPage />} />
                 <Route path="*" element={<NoPage />} />
                 <Route path="/auth/kakao/callback" component={KakaoRedirectHandler} />
               </Route>

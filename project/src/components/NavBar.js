@@ -6,7 +6,7 @@ const NavBar = () => {
     return (
         <>
             <div id="wrapper" className='grid place-items-center'>
-                <div className='gnb-box ml-auto bg-white border-2 border-gray-200 fixed left-0 bottom-0 w-full h-[80px] z-[1000]'>
+                <div className='gnb-box ml-auto bg-white border-2 border-b-0 border-gray-200 fixed left-0 bottom-0 w-full h-[80px] z-[1000]'>
                     <ul className='flex items-center justify-around w-full h-[80px] px-10 text-sm font-normal text-[#808080]' id="links">
                         <li className=''>
                             <Link to="/" className='flex flex-col items-center px-5'>
