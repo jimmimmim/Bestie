@@ -15,10 +15,8 @@ export default function Profile() {
                     <div className='w-[88px] h-[88px] flex justify-center items-center mr-6 bg-blue-200 rounded-full text-4xl'>
                         😊
                     </div>
-                    <a href={KAKAO_AUTH_URL}>
-                        <div className='flex items-center text-lg'>
-                            로그인을 해주세요.
-                        </div>
+                    <a href={KAKAO_AUTH_URL} className='flex items-center text-lg underline underline-offset-4'>
+                        로그인을 해주세요.
                     </a>
                 </div>
                 {/* 기타 항목 */}

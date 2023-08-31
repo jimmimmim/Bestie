@@ -30,7 +30,7 @@ function App() {
                 <Route path="profile" element={<Profile />} />
                 <Route path="apitest" element={<APItestPage />} />
                 <Route path="*" element={<NoPage />} />
-                <Route path="/auth/kakao/callback" component={KakaoRedirectHandler} />
+                <Route path="/oauth/callback/kakao" component={KakaoRedirectHandler} />
               </Route>
             </Routes>
           </CSSTransition>
