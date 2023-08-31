@@ -8,8 +8,8 @@ export default function Profile() {
     const KAKAO_AUTH_URL = `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
 
     return (
-        <div id='wrapper' className='flex justify-center'>
-            <div className='flex flex-col items-start max-w-[360px] w-[390px] border-2 border-gray-200 border-b-0 h-[780px]'>
+        <div id='wrapper' className='flex'>
+            <div className='flex flex-col items-start w-full border-2 border-gray-200 border-b-0 h-[780px]'>
                 {/* Profile */}
                 <div className='flex mx-10 my-14'>
                     <div className='w-[88px] h-[88px] flex justify-center items-center mr-6 bg-blue-200 rounded-full text-4xl'>
