@@ -10,16 +10,16 @@ export default function Home() {
                         <h3 className='px-1 text-left lg:text-2xl'>
                             지금 뜨는 여행지🚌 (인기여행지)
                         </h3>
-                        <Link to="/apitest" className='flex border-2 border-gray-200 bg-gray-200 h-[145px] md:h-80 lg:h-[600px] justify-center items-center my-4 rounded-md'>
-                            API 미리보기 (페이지 이동)
+                        <Link to="/detailPetAPI" className='flex border-2 border-gray-200 bg-gray-200 h-[145px] md:h-80 lg:h-[600px] justify-center items-center my-4 rounded-md'>
+                            detailPetAPI 미리보기 - 국문관광정보/반려동물
                         </Link>
                     </div>
                     <div className='w-full'>
                         <h3 className='px-1 text-left lg:text-2xl'>
                             **유형 메이트와 가기 좋은 장소 추천😘
                         </h3>
-                        <Link to="/apitest" className='flex border-2 border-gray-200 bg-gray-200 h-[145px] md:h-80 lg:h-[600px] justify-center items-center my-4 rounded-md'>
-                            API 미리보기 (페이지 이동)
+                        <Link to="/photoAPI" className='flex border-2 border-gray-200 bg-gray-200 h-[145px] md:h-80 lg:h-[600px] justify-center items-center my-4 rounded-md'>
+                            photoAPI 미리보기 - 관광갤러리
                         </Link>
                     </div>
                 </div>

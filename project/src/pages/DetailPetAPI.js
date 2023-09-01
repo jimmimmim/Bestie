@@ -1,9 +1,9 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 
-const URL = "/B551011/KorService1/detailPetTour1/";
+const URL = "/B551011/KorService1/detailPetTour1";
 
-function APItestPage() {
+function DetailPetAPI() {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
@@ -28,7 +28,7 @@ function APItestPage() {
             const MobileOS = 'ETC';
             const MobileApp = 'Bestie'
 
-            const response = await axios.get(`/B551011/KorService1/detailPetTour1?serviceKey=${process.env.REACT_APP_DATA_API_KEY}&pageNo=${pageNo}&numOfRows=${numOfRows}&MobileOS=${MobileOS}&MobileApp=${MobileApp}&_type=json`)
+            const response = await axios.get(`${URL}?serviceKey=${process.env.REACT_APP_DATA_API_KEY}&pageNo=${pageNo}&numOfRows=${numOfRows}&MobileOS=${MobileOS}&MobileApp=${MobileApp}&_type=json`)
 
             setData(response.data);
         } catch (e) {
@@ -48,7 +48,7 @@ function APItestPage() {
     }
     if (!data) return null;
 
-    console.log(data.response.body.items)
+    console.log(data.response.body.items);
 
     return (
         <div className="App">
@@ -65,4 +65,4 @@ function APItestPage() {
     );
 }
 
-export default APItestPage;
+export default DetailPetAPI;
