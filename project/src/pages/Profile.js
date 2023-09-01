@@ -9,13 +9,13 @@ export default function Profile() {
 
     return (
         <div id='wrapper' className='flex'>
-            <div className='flex flex-col items-start w-full border-2 border-gray-200 border-b-0 h-[780px]'>
+            <div className='flex flex-col items-start w-full border-2 border-gray-200 border-b-0'>
                 {/* Profile */}
                 <div className='flex mx-10 my-14'>
                     <div className='w-[88px] h-[88px] flex justify-center items-center mr-6 bg-blue-200 rounded-full text-4xl'>
                         😊
                     </div>
-                    <a href={KAKAO_AUTH_URL} className='flex items-center text-lg underline underline-offset-4'>
+                    <a href={KAKAO_AUTH_URL} className='flex items-center text-lg underline underline-offset-4  hover:text-blue-600 ease-in-out'>
                         로그인을 해주세요.
                     </a>
                 </div>

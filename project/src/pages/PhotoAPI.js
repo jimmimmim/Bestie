@@ -51,15 +51,6 @@ function PhotoAPI() {
                         <PhotoCard key={index} photo={photo} />
                     ))
                 }
-                {/* <p>galContentId: {data.response.body.items.item[0].galContentId}</p>
-                <p>galContentTypeId: {data.response.body.items.item[0].galContentTypeId}</p>
-                <p>galModifiedtime: {data.response.body.items.item[0].galModifiedtime}</p>
-                <p>galPhotographer: {data.response.body.items.item[0].galPhotographer}</p>
-                <p>galPhotographyLocation: {data.response.body.items.item[0].galPhotographyLocation}</p>
-                <p>galSearchKeyword: {data.response.body.items.item[0].galSearchKeyword}</p>
-                <p>galTitle: {data.response.body.items.item[0].galTitle}</p>
-                <p>galWebImageUrl: {data.response.body.items.item[0].galWebImageUrl}</p> */}
-
             </div>
         </div>
     );

@@ -5,7 +5,7 @@ export default function PhotoCard({ photo }) {
     console.log(photo);
 
     return (
-        <div className='flex flex-col border-2 border-gray-300 w-screen h-full p-2 mx-3 my-2 text-left'>
+        <div className='flex flex-col border-2 border-gray-300 h-full p-2 mx-3 my-2 text-left'>
             <div>
                 {/* header */}
                 <div className='flex items-center'>

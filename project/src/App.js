@@ -11,6 +11,8 @@ import Profile from './pages/Profile';
 import NoPage from "./pages/NoPage";
 import DetailPetAPI from "./pages/DetailPetAPI";
 import PhotoAPI from "./pages/PhotoAPI";
+import TestMain from './pages/TestMain';
+import TestDetail from './pages/TestDetail';
 
 import KakaoRedirectHandler from './services/KakaoRedirectHandeler';
 
@@ -29,6 +31,8 @@ function App() {
                 <Route path="mapPage" element={<MapPage />} />
                 <Route path="myPlace" element={<MyPlace />} />
                 <Route path="profile" element={<Profile />} />
+                <Route path="testMain" element={<TestMain />} />
+                <Route path="testDetail" element={<TestDetail />} />
                 <Route path="detailPetAPI" element={<DetailPetAPI />} />
                 <Route path="photoAPI" element={<PhotoAPI />} />
                 <Route path="*" element={<NoPage />} />

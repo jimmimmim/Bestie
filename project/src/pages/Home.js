@@ -44,8 +44,10 @@ export default function Home() {
                         숙소
                     </Link>
                 </div>
-                <div className='mt-3 text-right lg:text-2xl'>
-                    {'친밀도 검사 하러 가기 >>'}
+                <div className='mt-3 text-right'>
+                    <Link to="/testMain" className='lg:text-2xl hover:text-blue-600 hover:font-bold ease-in-out'>
+                        {'친밀도 검사 하러 가기 >>'}
+                    </Link>
                 </div>
             </div>
             <Outlet />
