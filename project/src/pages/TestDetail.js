@@ -1,4 +1,4 @@
-import React, { createRef, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Question = [
@@ -63,7 +63,7 @@ export default function TestDetail() {
         setResult(result + Question[current - 1].answers[1].type);
     }
 
-    // *** Show Result Page - Types ***
+    // *** Show Result Page - Types *** //
     useEffect(() => {
         if (result.length === TOTAL) showResult();
     })
