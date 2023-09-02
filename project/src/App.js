@@ -13,6 +13,7 @@ import DetailPetAPI from "./pages/DetailPetAPI";
 import PhotoAPI from "./pages/PhotoAPI";
 import TestMain from './pages/TestMain';
 import TestDetail from './pages/TestDetail';
+import TestResult from './pages/TestResult';
 
 import KakaoRedirectHandler from './services/KakaoRedirectHandeler';
 
@@ -33,6 +34,7 @@ function App() {
                 <Route path="profile" element={<Profile />} />
                 <Route path="testMain" element={<TestMain />} />
                 <Route path="testDetail" element={<TestDetail />} />
+                <Route path="testResult" element={<TestResult />} />
                 <Route path="detailPetAPI" element={<DetailPetAPI />} />
                 <Route path="photoAPI" element={<PhotoAPI />} />
                 <Route path="*" element={<NoPage />} />
