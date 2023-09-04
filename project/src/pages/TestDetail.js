@@ -1,66 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
-const Question = [
-    {
-        "qid": 1,
-        "question": "있잖아 너와 매일 밤하늘을 보고 싶어",
-        "answers": [
-            {
-                "answer": "이렇게 반짝이는 별을 보며 함께 잠들고 싶어",
-                "type": "a"
-            },
-            {
-                "answer": "그날 있었던 시덥지 않은 일상들",
-                "type": "b"
-            }
-        ]
-    },
-    {
-        "qid": 2,
-        "question": "가을밤 고요한 밤 잠 안 오는 밤",
-        "answers": [
-            {
-                "answer": "기러기 우는 소리 높고 낮을 때",
-                "type": "a"
-            },
-            {
-                "answer": "엄마품이 그리워 눈물 나오면",
-                "type": "b"
-            }
-        ]
-    },
-    {
-        "qid": 3,
-        "question": "제비꽃 동백꽃 수선화 매화",
-        "answers": [
-            {
-                "answer": "산딸기 산버찌 산더덕 산뽕",
-                "type": "a"
-            },
-            {
-                "answer": "정성을 다해 준비했어요",
-                "type": "b"
-            }
-        ]
-    },
-]
+import Question from '../components/Question.json';
 
 export default function TestDetail() {
 
     const [current, setCurrent] = useState(1);
     const [result, setResult] = useState('');
     const navigate = useNavigate();
-    const TOTAL = 3;
+    const TOTAL = 11;
 
     const buttonTop = () => {
         if (current < TOTAL) setCurrent(current + 1);
         setResult(result + Question[current - 1].answers[0].type);
+        // console.log(Question[current - 1].answers[0].type);
     }
 
     const buttonBottom = () => {
         if (current < TOTAL) setCurrent(current + 1);
         setResult(result + Question[current - 1].answers[1].type);
+        // console.log(Question[current - 1].answers[1].type);
     }
 
     // *** Show Result Page - Types *** //

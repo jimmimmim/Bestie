@@ -1,7 +1,17 @@
-import React from 'react';
-import { Outlet, Link } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import { Outlet, Link, useLocation } from "react-router-dom";
 
 export default function Home() {
+
+    const location = useLocation();
+    const [result, setResult] = useState('아직 모르는');
+
+    useEffect(() => {
+        if (location.state) {
+            setResult(location.state.result);
+        }
+    }, [location.state])
+
     return (
         <div id='wrapper' className='flex flex-col'>
             <div className='flex flex-col w-full p-8 border-2 border-b-0 border-gray-200 mb-14'>
@@ -15,9 +25,12 @@ export default function Home() {
                         </Link>
                     </div>
                     <div className='w-full'>
-                        <h3 className='px-1 text-left lg:text-2xl'>
-                            **유형 메이트와 가기 좋은 장소 추천😘
-                        </h3>
+                        <div className='flex'>
+                            <span className='font-bold lg:text-2xl text-blue-500'>{result}</span>
+                            <h3 className='px-1 text-left lg:text-2xl'>
+                                유형 메이트와 가기 좋은 장소 추천😘
+                            </h3>
+                        </div>
                         <Link to="/photoAPI" className='flex border-2 border-gray-200 bg-gray-200 h-[145px] md:h-80 lg:h-[600px] justify-center items-center my-4 rounded-md'>
                             photoAPI 미리보기 - 관광갤러리
                         </Link>
@@ -53,4 +66,8 @@ export default function Home() {
             <Outlet />
         </div>
     );
+}
+
+Home.defaultProps = {
+    result: '아직 모르는',
 }
