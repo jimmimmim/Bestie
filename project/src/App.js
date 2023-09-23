@@ -40,7 +40,7 @@ function App() {
                 <Route path="detailPetAPI" element={<DetailPetAPI />} />
                 <Route path="photoAPI" element={<PhotoAPI />} />
                 <Route path="*" element={<NoPage />} />
-                <Route path="/oauth/callback/kakao" component={KakaoRedirectHandler} />
+                <Route path="/auth/kakao/callback" element={<KakaoRedirectHandler />} />
               </Route>
             </Routes>
           </CSSTransition>

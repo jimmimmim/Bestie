@@ -10,7 +10,7 @@ const KakaoRedirectHandler = () => {
         const code = params.get("code");
         const grant_type = "authorization_code";
         const client_id = `${process.env.REACT_APP_KAKAO_LOGIN_REST_API_KEY}`;
-        const REDIRECT_URI = 'http://localhost:3000/oauth/callback/kakao'
+        const REDIRECT_URI = 'http://localhost:3000/auth/kakao/callback'
 
         axios.post(`https://kauth.kakao.com/oauth/token?
             grant_type=${grant_type}
@@ -23,7 +23,6 @@ const KakaoRedirectHandler = () => {
             },
         }).then((res) => {
             console.log(res)
-            // res에 포함된 토큰 받아서 원하는 로직을 하면된다.
         })
     }, [])
 
