@@ -2,6 +2,7 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 import PhotoCard from '../components/PhotoCard';
 
+const PROXY = window.location.hostname === 'localhost' ? '' : '/proxy';
 const URL = "/B551011/PhotoGalleryService1/galleryList1";
 
 function PhotoAPI() {
@@ -20,7 +21,7 @@ function PhotoAPI() {
             const MobileOS = 'ETC';
             const MobileApp = 'Bestie'
 
-            const response = await axios.get(`${URL}?serviceKey=${process.env.REACT_APP_DATA_API_KEY}&pageNo=${pageNo}&numOfRows=${numOfRows}&MobileOS=${MobileOS}&MobileApp=${MobileApp}&_type=json`)
+            const response = await axios.get(`${PROXY}${URL}?serviceKey=${process.env.REACT_APP_DATA_API_KEY}&pageNo=${pageNo}&numOfRows=${numOfRows}&MobileOS=${MobileOS}&MobileApp=${MobileApp}&_type=json`)
 
             setData(response.data);
         } catch (e) {
