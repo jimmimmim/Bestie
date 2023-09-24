@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import PhotoCard from '../components/PhotoCard';
 
 const URL = "/B551011/PhotoGalleryService1/galleryList1";
-const PROXY = window.location.hostname === 'localhost' ? URL : '/proxy';
+const PROXY = window.location.hostname === 'localhost' ? "/B551011/PhotoGalleryService1/galleryList1" : '/proxy';
 
 function PhotoAPI() {
     const [data, setData] = useState(null);
