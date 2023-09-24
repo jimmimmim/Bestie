@@ -4,7 +4,6 @@ import PhotoCard from '../components/PhotoCard';
 
 const URL = "/B551011/PhotoGalleryService1/galleryList1";
 
-
 function PhotoAPI() {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(false);
