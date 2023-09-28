@@ -16,10 +16,10 @@ export default function Home() {
         <div id='wrapper' className='flex flex-col'>
             <div className='flex flex-col w-full p-8 border-2 border-b-0 border-gray-200 mb-14'>
                 <div className='flex flex-col items-center justify-center mb-10'>
-                    <div className='flex text-6xl text-blue-400 h-[540px] items-center'>
+                    <div className='flex text-6xl text-blue-400 h-[400px] items-center'>
                         Bestie
                     </div>
-                    <Link to="/testMain" className='   min-w-[200px] w-1/2  text-white ease-in-out lg:text-2xlhover:font-bold'>
+                    <Link to="/testMain" className='   min-w-[200px] w-1/2  text-white ease-in-out lg:text-2xlhover:font-bold mb-[140px]'>
                         <div className='flex justify-center py-3 mt-3 bg-blue-400 rounded-full hover:bg-blue-500'>
                             {'친밀도 검사하러 가기'}
                         </div>
