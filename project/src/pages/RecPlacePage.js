@@ -13,10 +13,8 @@ export default function RecPlacePage() {
     return (
         <div className='flex flex-col items-center justify-center w-screen h-screen wrapper'>
             <div>
-                추천 여행지
-            </div>
-            <div>
-                {`${result}에게 추천하는 여행지`}
+                <span className='mx-1 text-xl font-bold text-blue-500 lg:text-2xl'>{result}</span>
+                <span className='text-lg'> 유형에게 추천하는 여행지</span>
             </div>
             <button
                 className='border border-blue-600 my-2 py-3 w-[70%] rounded-lg hover:bg-blue-200 hover:text-blue-600 hover:font-bold'

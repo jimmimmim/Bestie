@@ -15,6 +15,16 @@ export default function Home() {
     return (
         <div id='wrapper' className='flex flex-col'>
             <div className='flex flex-col w-full p-8 border-2 border-b-0 border-gray-200 mb-14'>
+                <div className='flex flex-col items-center justify-center mb-10'>
+                    <div className='flex text-6xl text-blue-400 h-[540px] items-center'>
+                        Bestie
+                    </div>
+                    <Link to="/testMain" className='   min-w-[200px] w-1/2  text-white ease-in-out lg:text-2xlhover:font-bold'>
+                        <div className='flex justify-center py-3 mt-3 bg-blue-400 rounded-full hover:bg-blue-500'>
+                            {'친밀도 검사하러 가기'}
+                        </div>
+                    </Link>
+                </div>
                 <div className='lg:flex lg:justify-between'>
                     <div className='w-full lg:mr-3'>
                         <h3 className='px-1 text-left lg:text-2xl'>
@@ -26,7 +36,7 @@ export default function Home() {
                     </div>
                     <div className='w-full'>
                         <div className='flex'>
-                            <span className='font-bold lg:text-2xl text-blue-500'>{result}</span>
+                            <span className='font-bold text-blue-500 lg:text-2xl'>{result}</span>
                             <h3 className='px-1 text-left lg:text-2xl'>
                                 유형 메이트와 가기 좋은 장소 추천😘
                             </h3>
@@ -55,11 +65,6 @@ export default function Home() {
                     </Link>
                     <Link to="/apitest" className='flex border-2 border-gray-200 bg-gray-200 h-[90px] md:h-44 lg:text-2xl items-end rounded-md p-2'>
                         숙소
-                    </Link>
-                </div>
-                <div className='mt-3 text-right'>
-                    <Link to="/testMain" className='lg:text-2xl hover:text-blue-600 hover:font-bold ease-in-out'>
-                        {'친밀도 검사 하러 가기 >>'}
                     </Link>
                 </div>
             </div>

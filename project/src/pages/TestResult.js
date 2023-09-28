@@ -11,6 +11,17 @@ export default function TestResult() {
         'ADE': 4, 'ADF': 5, 'BDE': 6, 'BDF': 7
     }
 
+    const typeAnimal = {
+        'ACE': '사교적인 강아지',
+        'ACF': '함께하는 게 좋은 캥거루',
+        'BCE': '계획적인 바다사자',
+        'BCF': '협력하는 돌고래',
+        'ADE': '편한 게 좋은 참새',
+        'ADF': '내 사람이 좋은 달마시안',
+        'BDE': '때때로 모험하는 고양이',
+        'BDF': '독립적인 햄스터'
+    }
+
     useEffect(() => {
         let alphabetCnt = {}
         let typeResult = ''
@@ -39,7 +50,7 @@ export default function TestResult() {
 
     const navigate = useNavigate();
     const showRecommend = () => {
-        navigate("/recommendPlace", { state: { result: result } });
+        navigate("/recommendPlace", { state: { result: typeAnimal[result] } });
     }
 
     // console.log(TypeResult[typeDict[result]]);
@@ -50,9 +61,9 @@ export default function TestResult() {
                 테스트 결과
             </div>
             <div className='p-3 m-3'>
-                <div className='font-bold text-xl lg:text-2xl my-2'>
+                <div className='my-2 text-xl font-bold lg:text-2xl'>
                     <span>당신이 고른 답은 </span>
-                    <span className='text-blue-500 mx-1'>{result}</span>
+                    <span className='mx-1 text-blue-500'>{typeAnimal[result]}</span>
                     <span>입니다.</span>
                 </div>
                 <div className='py-2'>

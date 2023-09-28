@@ -15,6 +15,8 @@ import TestMain from './pages/TestMain';
 import TestDetail from './pages/TestDetail';
 import TestResult from './pages/TestResult';
 import RecPlacePage from './pages/RecPlacePage';
+import MyPosts from './pages/MyPosts';
+import Notice from './pages/Notice';
 
 import KakaoRedirectHandler from './services/KakaoRedirectHandeler';
 
@@ -37,6 +39,8 @@ function App() {
                 <Route path="testDetail" element={<TestDetail />} />
                 <Route path="testResult" element={<TestResult />} />
                 <Route path="recommendPlace" element={<RecPlacePage />} />
+                <Route path="myPosts" element={<MyPosts />} />
+                <Route path="notice" element={<Notice />} />
                 <Route path="detailPetAPI" element={<DetailPetAPI />} />
                 <Route path="photoAPI" element={<PhotoAPI />} />
                 <Route path="*" element={<NoPage />} />
