@@ -4,7 +4,7 @@ import { Outlet, Link, useLocation } from "react-router-dom";
 export default function Home() {
 
     const location = useLocation();
-    const [result, setResult] = useState('아직 모르는');
+    const [result, setResult] = useState('');
 
     useEffect(() => {
         if (location.state) {
@@ -19,16 +19,21 @@ export default function Home() {
                     <div className='flex text-6xl text-blue-400 h-[400px] items-center'>
                         Bestie
                     </div>
-                    <Link to="/testMain" className='   min-w-[200px] w-1/2  text-white ease-in-out lg:text-2xlhover:font-bold mb-[140px]'>
+                    <Link to="/testMain" className='   min-w-[200px] w-1/2  text-white ease-in-out lg:text-2xlhover:font-bold'>
                         <div className='flex justify-center py-3 mt-3 bg-blue-400 rounded-full hover:bg-blue-500'>
                             {'친밀도 검사하러 가기'}
                         </div>
                     </Link>
+                    <div className='mt-3 text-gray-500 fadetext text'>
+                        스크롤해서 추천 여행지 보기
+                    </div>
+                    <div className='mb-[140px] border border-black scrollarrow'>
+                    </div>
                 </div>
                 <div className='lg:flex lg:justify-between'>
                     <div className='w-full lg:mr-3'>
                         <h3 className='px-1 text-left lg:text-2xl'>
-                            지금 뜨는 여행지🚌 (인기여행지)
+                            지금 뜨는 여행지
                         </h3>
                         <Link to="/detailPetAPI" className='flex border-2 border-gray-200 bg-gray-200 h-[145px] md:h-80 lg:h-[600px] justify-center items-center my-4 rounded-md'>
                             detailPetAPI 미리보기 - 국문관광정보/반려동물
@@ -38,7 +43,7 @@ export default function Home() {
                         <div className='flex'>
                             <span className='font-bold text-blue-500 lg:text-2xl'>{result}</span>
                             <h3 className='px-1 text-left lg:text-2xl'>
-                                유형 메이트와 가기 좋은 장소 추천😘
+                                유형 메이트와 가기 좋은 장소
                             </h3>
                         </div>
                         <Link to="/photoAPI" className='flex border-2 border-gray-200 bg-gray-200 h-[145px] md:h-80 lg:h-[600px] justify-center items-center my-4 rounded-md'>
@@ -74,5 +79,5 @@ export default function Home() {
 }
 
 Home.defaultProps = {
-    result: '아직 모르는',
+    result: '',
 }

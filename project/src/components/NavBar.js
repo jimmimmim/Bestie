@@ -17,7 +17,7 @@ const NavBar = () => {
                         <li className=''>
                             <Link to="/mapPage" className='flex flex-col items-center px-4'>
                                 <GoSearch className='text-[25px]' />
-                                검색
+                                관광지도
                             </Link>
                         </li>
                         <li className=''>
