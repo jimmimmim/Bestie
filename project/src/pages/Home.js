@@ -24,10 +24,10 @@ export default function Home() {
                             {'친밀도 검사하러 가기'}
                         </div>
                     </Link>
-                    <div className='mt-3 text-gray-500 fadetext text'>
+                    <div className='mt-4 text-gray-400 fadetext text'>
                         스크롤해서 추천 여행지 보기
                     </div>
-                    <div className='mb-[140px] border border-black scrollarrow'>
+                    <div className='mb-[140px] border border-gray-400 scrollarrow'>
                     </div>
                 </div>
                 <div className='lg:flex lg:justify-between'>
