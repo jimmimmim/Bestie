@@ -65,7 +65,7 @@ export default function TestResult() {
             </div>
             <div className='p-3 m-3 text-left'>
                 <div className='my-2 text-xl font-bold lg:text-2xl'>
-                    <span>당신의 여행 유형은 </span>
+                    <div>당신의 여행 유형은 </div>
                     <span className='mx-1 text-blue-500'>{typeAnimal[result]}</span>
                     <span>입니다.</span>
                 </div>
@@ -80,7 +80,6 @@ export default function TestResult() {
                         TypeResult[typeDict[result]] &&
                         TypeResult[typeDict[result]].p1
                     }
-                    <br />
                     {
                         TypeResult[typeDict[result]] &&
                         TypeResult[typeDict[result]].p2

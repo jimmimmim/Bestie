@@ -33,7 +33,7 @@ export default function TestDetail() {
     return (
         <div className='flex flex-col w-screen h-screen wrapper'>
             {/* header - Questions */}
-            <div className='px-20 mt-20'>
+            <div className='px-10 mt-20'>
                 <div className='mb-10 text-3xl font-bold text-left text-blue-600'>
                     {`# ${current}`}
                 </div>
@@ -44,13 +44,13 @@ export default function TestDetail() {
             {/* body - Answers */}
             <div className='flex flex-col items-center'>
                 <button
-                    className='bg-[#F1F5FE] my-2 py-10 w-[70%] rounded-lg text-sm hover:bg-blue-200'
+                    className='bg-[#F1F5FE] my-2 py-10 w-[70%] rounded-lg text-sm hover:bg-blue-200 px-2'
                     onClick={buttonTop}
                 >
                     {Question[current - 1].answers[0].answer}
                 </button>
                 <button
-                    className='bg-[#F1F5FE] my-2 py-10 w-[70%] rounded-lg text-sm hover:bg-blue-200'
+                    className='bg-[#F1F5FE] my-2 py-10 w-[70%] rounded-lg text-sm hover:bg-blue-200 px-2'
                     onClick={buttonBottom}
                 >
                     {Question[current - 1].answers[1].answer}

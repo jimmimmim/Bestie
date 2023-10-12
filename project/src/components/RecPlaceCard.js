@@ -18,7 +18,7 @@ export default function RecPlaceCard({ type }) {
     // }, [])
 
     return (
-        <div className='flex flex-col border-2 border-gray-300 w-[70%] h-[400px] overflow-auto p-2 mx-3 my-2 text-left'>
+        <div className='flex flex-col border-2 border-gray-300 w-[90%] h-[400px] overflow-auto p-2 mx-3 my-2 text-left'>
             <div>
                 {/* header */}
                 <div className='flex items-center'>
