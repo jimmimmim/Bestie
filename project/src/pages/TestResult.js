@@ -49,8 +49,11 @@ export default function TestResult() {
     }, [])
 
     const navigate = useNavigate();
+    // const showRecommend = () => {
+    //     navigate("/recommendPlace", { state: { result: typeAnimal[result] } });
+    // }
     const showRecommend = () => {
-        navigate("/recommendPlace", { state: { result: typeAnimal[result] } });
+        navigate("/recommendPlace", { state: { result: result } });
     }
 
     // console.log(TypeResult[typeDict[result]]);
@@ -62,7 +65,7 @@ export default function TestResult() {
             </div>
             <div className='p-3 m-3'>
                 <div className='my-2 text-xl font-bold lg:text-2xl'>
-                    <span>당신이 고른 답은 </span>
+                    <span>당신의 여행 유형은 </span>
                     <span className='mx-1 text-blue-500'>{typeAnimal[result]}</span>
                     <span>입니다.</span>
                 </div>

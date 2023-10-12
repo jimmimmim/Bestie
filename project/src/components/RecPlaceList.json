@@ -1,0 +1,90 @@
+[
+    {
+        "tid": 0,
+        "type": "ACE",
+        "name": "사교적인 강아지",
+        "p1": "평창군 스카이 타워 체험시설",
+        "img1": "http://tong.visitkorea.or.kr/cms/resource/69/2997969_image2_1.jpg",
+        "p2": "거제 덕포랜드 씨라인",
+        "img2": "http://tong.visitkorea.or.kr/cms/resource/92/2393092_image2_1.jpg",
+        "p3": "서울라이트 한강 빛섬축제",
+        "img3": "http://tong.visitkorea.or.kr/cms/resource/94/3012094_image2_1.jpg"
+    },
+    {
+        "tid": 1,
+        "type": "ACF",
+        "name": "함께하는 게 좋은 캥거루",
+        "p1": "밤의 석조전",
+        "img1": "http://tong.visitkorea.or.kr/cms/resource/46/2817146_image2_1.JPG",
+        "p2": "자라섬에서의 낭만 넘치는 오토캠핑",
+        "img2": "http://tong.visitkorea.or.kr/cms/resource/51/1225651_image2_1.jpg",
+        "p3": "자연을 품은 가을밤의 서정",
+        "img3": "http://tong.visitkorea.or.kr/cms/resource/39/1999739_image2_1.jpg"
+    },
+    {
+        "tid": 2,
+        "type": "BCE",
+        "name": "계획적인 바다사자",
+        "p1": "오르:빛 워터파고다",
+        "img1": "http://tong.visitkorea.or.kr/cms/resource/01/3013901_image2_1.png",
+        "p2": "광안리해변 테마거리",
+        "img2": "http://tong.visitkorea.or.kr/cms/resource/88/1156588_image2_1.jpg",
+        "p3": "월미문화거리 & 달빛음악분수",
+        "img3": "http://tong.visitkorea.or.kr/cms/resource/69/2786469_image2_1.jpg"
+    },
+    {
+        "tid": 3,
+        "type": "BCF",
+        "name": "협력하는 돌고래",
+        "p1": "천년의 빛을 품은 아름답고 따뜻한 땅, 영광으로!",
+        "img1": "http://tong.visitkorea.or.kr/cms/resource/04/2684004_image2_1.jpg",
+        "p2": "땅끝관광지",
+        "img2": "http://tong.visitkorea.or.kr/cms/resource/36/2367436_image2_1.jpg",
+        "p3": "영일대 호수공원",
+        "img3": "http://tong.visitkorea.or.kr/cms/resource/04/2738504_image2_1.jpg"
+    },
+    {
+        "tid": 4,
+        "type": "ADE",
+        "name": "편한 게 좋은 참새",
+        "p1": "에코랜드테마파크",
+        "img1": "http://tong.visitkorea.or.kr/cms/resource/39/2046439_image2_1.jpg",
+        "p2": "빛가람 호수공원",
+        "img2": "http://tong.visitkorea.or.kr/cms/resource/91/2737391_image2_1.jpg",
+        "p3": "롯데월드 어드벤처 부산",
+        "img3": "http://tong.visitkorea.or.kr/cms/resource/19/2815719_image2_1.jpg"
+    },
+    {
+        "tid": 5,
+        "type": "ADF",
+        "name": "내 사람이 좋은 달마시안",
+        "p1": "아르떼뮤지엄 제주",
+        "img1": "http://tong.visitkorea.or.kr/cms/resource/41/2867941_image2_1.jpg",
+        "p2": "강릉시 오죽헌/시립박물관",
+        "img2": "http://tong.visitkorea.or.kr/cms/resource/15/1185615_image2_1.jpg",
+        "p3": "경주 최고의 문화유산을 만나다",
+        "img3": "http://tong.visitkorea.or.kr/cms/resource/30/1200930_image2_1.jpg"
+    },
+    {
+        "tid": 6,
+        "type": "BDE",
+        "name": "때때로 모험하는 고양이",
+        "p1": "피규어뮤지엄 제주",
+        "img1": "http://tong.visitkorea.or.kr/cms/resource/40/2608440_image2_1.bmp",
+        "p2": "엑스코(EXCO)",
+        "img2": "http://tong.visitkorea.or.kr/cms/resource/79/1574379_image2_1.jpg",
+        "p3": "도자기체험미술관 비즘",
+        "img3": "http://tong.visitkorea.or.kr/cms/resource/00/1941700_image2_1.jpg"
+    },
+    {
+        "tid": 7,
+        "type": "BDF",
+        "name": "독립적인 햄스터",
+        "p1": "삼척의 영화 촬영 명소를 찾아서",
+        "img1": "http://tong.visitkorea.or.kr/cms/resource/77/608977_image2_1.jpg",
+        "p2": "한려해상국립공원의 비경을 만나다",
+        "img2": "http://tong.visitkorea.or.kr/cms/resource/58/749858_image2_1.jpg",
+        "p3": "호미곶에 해맞으러 가자",
+        "img3": "http://tong.visitkorea.or.kr/cms/resource/41/682341_image2_1.jpg"
+    }
+]
