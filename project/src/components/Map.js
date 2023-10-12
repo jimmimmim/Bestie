@@ -35,6 +35,7 @@ function Map() {
             // kakao.maps.event.addListener(marker, 'mouseover', makeOverListener(map, marker, infowindow));
             // kakao.maps.event.addListener(marker, 'mouseout', makeOutListener(infowindow));
             kakao.maps.event.addListener(marker, 'click', makeOverListener(map, marker, infowindow));
+
         }
 
         // 인포윈도우를 표시하는 클로저를 만드는 함수입니다 

@@ -31,26 +31,26 @@ export default function TestDetail() {
     }
 
     return (
-        <div className='flex flex-col justify-center w-screen h-screen wrapper'>
+        <div className='flex flex-col w-screen h-screen wrapper'>
             {/* header - Questions */}
-            <div className='mb-20'>
-                <div>
-                    {`질문 ${current}`}
+            <div className='px-20 mt-20'>
+                <div className='mb-10 text-3xl font-bold text-left text-blue-600'>
+                    {`# ${current}`}
                 </div>
-                <div>
+                <div className='mb-20 text-2xl font-bold text-[#616161]'>
                     {Question[current - 1].question}
                 </div>
             </div>
             {/* body - Answers */}
             <div className='flex flex-col items-center'>
                 <button
-                    className='border border-blue-600 my-2 py-3 w-[70%] rounded-lg text-sm hover:bg-blue-200'
+                    className='bg-[#F1F5FE] my-2 py-10 w-[70%] rounded-lg text-sm hover:bg-blue-200'
                     onClick={buttonTop}
                 >
                     {Question[current - 1].answers[0].answer}
                 </button>
                 <button
-                    className='border border-blue-600 my-2 py-3 w-[70%] rounded-lg text-sm hover:bg-blue-200'
+                    className='bg-[#F1F5FE] my-2 py-10 w-[70%] rounded-lg text-sm hover:bg-blue-200'
                     onClick={buttonBottom}
                 >
                     {Question[current - 1].answers[1].answer}
