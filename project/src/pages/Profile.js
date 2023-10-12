@@ -21,7 +21,7 @@ export default function Profile() {
                     {/* <a href={KAKAO_AUTH_URL} className='flex items-center text-lg underline ease-in-out underline-offset-4 hover:text-blue-600'>
                         로그인을 해주세요.
                     </a> */}
-                    <a href='#;' className='flex items-center text-lg underline ease-in-out underline-offset-4 hover:text-blue-600'>
+                    <a href='#;' className='items-center hidden text-lg underline ease-in-out underline-offset-4 hover:text-blue-600'>
                         로그인
                     </a>
                 </div>
