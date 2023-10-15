@@ -18,6 +18,8 @@ import RecPlacePage from './pages/RecPlacePage';
 import MyPosts from './pages/MyPosts';
 import Notice from './pages/Notice';
 
+import Place2 from './pages/Place2';
+
 import KakaoRedirectHandler from './services/KakaoRedirectHandeler';
 
 import './App.css';
@@ -43,6 +45,7 @@ function App() {
                 <Route path="notice" element={<Notice />} />
                 <Route path="detailPetAPI" element={<DetailPetAPI />} />
                 <Route path="photoAPI" element={<PhotoAPI />} />
+                <Route path="place2" element={<Place2 />} />
                 <Route path="*" element={<NoPage />} />
                 <Route path="/auth/kakao/callback" element={<KakaoRedirectHandler />} />
               </Route>
