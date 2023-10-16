@@ -125,7 +125,7 @@ export default function Home() {
                     {/* Grid - 6 images */}
                     <div className='grid grid-cols-2 gap-2'>
                         {/* 1 */}
-                        <Link to="/place2" className={`${p1} border-2 border-gray-200 bg-gray-200 text-white h-[300px] md:h-44 lg:text-2xl items-end rounded-md p-2`} style={{ backgroundImage: "url('http://tong.visitkorea.or.kr/cms/resource/04/2738504_image2_1.jpg')", backgroundSize: 'cover' }}>
+                        <Link to="/place1" className={`${p1} border-2 border-gray-200 bg-gray-200 text-white h-[300px] md:h-44 lg:text-2xl items-end rounded-md p-2`} style={{ backgroundImage: "url('http://tong.visitkorea.or.kr/cms/resource/04/2738504_image2_1.jpg')", backgroundSize: 'cover' }}>
                             인문 &gt; 축제
                         </Link>
                         {/* 2 */}
@@ -133,35 +133,35 @@ export default function Home() {
                             인문 &gt; 공연/행사
                         </Link>
                         {/* 3 */}
-                        <Link to="/place11" className={`${p3} border-2 border-gray-200 bg-gray-200 h-[300px] md:h-44 lg:text-2xl items-end rounded-md p-2`} style={{ backgroundImage: "url('http://tong.visitkorea.or.kr/cms/resource/95/2933695_image2_1.bmp')", backgroundSize: 'cover' }}>
+                        <Link to="/place3" className={`${p3} border-2 border-gray-200 bg-gray-200 h-[300px] md:h-44 lg:text-2xl items-end rounded-md p-2`} style={{ backgroundImage: "url('http://tong.visitkorea.or.kr/cms/resource/95/2933695_image2_1.bmp')", backgroundSize: 'cover' }}>
                             인문 &gt; 휴양관광지
                         </Link>
                         {/* 4 */}
-                        <Link to="/place11" className={`${p4} border-2 border-gray-200 bg-gray-200 h-[300px] md:h-44 lg:text-2xl items-end rounded-md p-2`} style={{ backgroundImage: "url('http://tong.visitkorea.or.kr/cms/resource/15/1185615_image2_1.jpg')", backgroundSize: 'cover' }}>
+                        <Link to="/place4" className={`${p4} border-2 text-white border-gray-200 bg-gray-200 h-[300px] md:h-44 lg:text-2xl items-end rounded-md p-2`} style={{ backgroundImage: "url('http://tong.visitkorea.or.kr/cms/resource/36/2367436_image2_1.jpg')", backgroundSize: 'cover' }}>
                             인문 &gt; 문화시설
                         </Link>
                         {/* 5 */}
-                        <Link to="/place11" className={`${p5} border-2 border-gray-200 bg-gray-200 h-[300px] md:h-44 lg:text-2xl items-end rounded-md p-2`} style={{ backgroundImage: "url('http://tong.visitkorea.or.kr/cms/resource/15/1185615_image2_1.jpg')", backgroundSize: 'cover' }}>
+                        <Link to="/place5" className={`${p5} border-2 text-white border-gray-200 bg-gray-200 h-[300px] md:h-44 lg:text-2xl items-end rounded-md p-2`} style={{ backgroundImage: "url('http://tong.visitkorea.or.kr/cms/resource/15/1185615_image2_1.jpg')", backgroundSize: 'cover' }}>
                             인문 &gt; 건축/조형물
                         </Link>
                         {/* 6 */}
-                        <Link to="/place11" className={`${p6} border-2 border-gray-200 bg-gray-200 h-[300px] md:h-44 lg:text-2xl items-end rounded-md p-2`} style={{ backgroundImage: "url('http://tong.visitkorea.or.kr/cms/resource/91/2737391_image2_1.jpg')", backgroundSize: 'cover' }}>
+                        <Link to="/place6" className={`${p6} border-2 border-gray-200 bg-gray-200 h-[300px] md:h-44 lg:text-2xl items-end rounded-md p-2`} style={{ backgroundImage: "url('http://tong.visitkorea.or.kr/cms/resource/91/2737391_image2_1.jpg')", backgroundSize: 'cover' }}>
                             인문 &gt; 체험관광지
                         </Link>
                         {/* 7 */}
-                        <Link to="/place11" className={`${p7} border-2 border-gray-200 bg-gray-200 h-[300px] md:h-44 lg:text-2xl items-end rounded-md p-2`} style={{ backgroundImage: "url('http://tong.visitkorea.or.kr/cms/resource/69/2786469_image2_1.jpg')", backgroundSize: 'cover' }}>
+                        <Link to="/place7" className={`${p7} border-2 border-gray-200 bg-gray-200 h-[300px] md:h-44 lg:text-2xl items-end rounded-md p-2`} style={{ backgroundImage: "url('http://tong.visitkorea.or.kr/cms/resource/69/2786469_image2_1.jpg')", backgroundSize: 'cover' }}>
                             레포츠 &gt; 복합레포츠
                         </Link>
                         {/* 8 */}
-                        <Link to="/place11" className={`${p8} border-2 border-gray-200 bg-gray-200 h-[300px] md:h-44 lg:text-2xl items-end text-white rounded-md p-2`} style={{ backgroundImage: "url('http://tong.visitkorea.or.kr/cms/resource/77/608977_image2_1.jpg')", backgroundSize: 'cover' }}>
+                        <Link to="/place8" className={`${p8} border-2 border-gray-200 bg-gray-200 h-[300px] md:h-44 lg:text-2xl items-end text-white rounded-md p-2`} style={{ backgroundImage: "url('http://tong.visitkorea.or.kr/cms/resource/77/608977_image2_1.jpg')", backgroundSize: 'cover' }}>
                             추천코스 &gt; 캠핑코스
                         </Link>
                         {/* 9 */}
-                        <Link to="/place11" className={`${p9} border-2 border-gray-200 bg-gray-200 h-[300px] md:h-44 lg:text-2xl items-end rounded-md p-2`} style={{ backgroundImage: "url('http://tong.visitkorea.or.kr/cms/resource/43/3016643_image2_1.jpg')", backgroundSize: 'cover' }}>
+                        <Link to="/place9" className={`${p9} border-2 border-gray-200 bg-gray-200 h-[300px] md:h-44 lg:text-2xl items-end rounded-md p-2`} style={{ backgroundImage: "url('http://tong.visitkorea.or.kr/cms/resource/43/3016643_image2_1.jpg')", backgroundSize: 'cover' }}>
                             추천코스 &gt; 힐링코스
                         </Link>
                         {/* 10 */}
-                        <Link to="/place11" className={`${p10} border-2 border-gray-200 bg-gray-200 h-[300px] md:h-44 lg:text-2xl items-end text-white rounded-md p-2`} style={{ backgroundImage: "url('http://tong.visitkorea.or.kr/cms/resource/04/2684004_image2_1.jpg')", backgroundSize: 'cover' }}>
+                        <Link to="/place10" className={`${p10} border-2 border-gray-200 bg-gray-200 h-[300px] md:h-44 lg:text-2xl items-end text-white rounded-md p-2`} style={{ backgroundImage: "url('http://tong.visitkorea.or.kr/cms/resource/04/2684004_image2_1.jpg')", backgroundSize: 'cover' }}>
                             추천코스 &gt; 가족코스
                         </Link>
                         {/* 11 */}

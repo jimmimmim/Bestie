@@ -18,7 +18,16 @@ import RecPlacePage from './pages/RecPlacePage';
 import MyPosts from './pages/MyPosts';
 import Notice from './pages/Notice';
 
+import Place1 from './pages/Place1';
 import Place2 from './pages/Place2';
+import Place3 from './pages/Place3';
+import Place4 from './pages/Place4';
+import Place5 from './pages/Place5';
+import Place6 from './pages/Place6';
+import Place7 from './pages/Place7';
+import Place8 from './pages/Place8';
+import Place9 from './pages/Place9';
+import Place10 from './pages/Place10';
 import Place11 from './pages/Place11';
 
 import KakaoRedirectHandler from './services/KakaoRedirectHandeler';
@@ -46,7 +55,16 @@ function App() {
                 <Route path="notice" element={<Notice />} />
                 <Route path="detailPetAPI" element={<DetailPetAPI />} />
                 <Route path="photoAPI" element={<PhotoAPI />} />
+                <Route path="place1" element={<Place1 />} />
                 <Route path="place2" element={<Place2 />} />
+                <Route path="place3" element={<Place3 />} />
+                <Route path="place4" element={<Place4 />} />
+                <Route path="place5" element={<Place5 />} />
+                <Route path="place6" element={<Place6 />} />
+                <Route path="place7" element={<Place7 />} />
+                <Route path="place8" element={<Place8 />} />
+                <Route path="place9" element={<Place9 />} />
+                <Route path="place10" element={<Place10 />} />
                 <Route path="place11" element={<Place11 />} />
                 <Route path="*" element={<NoPage />} />
                 <Route path="/auth/kakao/callback" element={<KakaoRedirectHandler />} />
