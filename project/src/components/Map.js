@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-import LocationData from '../components/LocationData.json';
+import MarkerData from '../components/MarkerData.json';
 const { kakao } = window;
 
 function Map() {
@@ -9,23 +9,23 @@ function Map() {
         const container = document.getElementById('map');
         const options = {
             center: new kakao.maps.LatLng(33.450701, 126.570667), // center
-            level: 3
+            level: 11
         };
         const map = new kakao.maps.Map(container, options);
 
-        for (let i = 0; i < LocationData.length; i++) {
+        for (let i = 0; i < MarkerData.length; i++) {
             // 마커를 생성합니다
             const marker = new kakao.maps.Marker({
                 map: map, // 마커를 표시할 지도
-                position: new kakao.maps.LatLng(LocationData[i].lat, LocationData[i].lng) // 마커의 위치
+                position: new kakao.maps.LatLng(MarkerData[i].lat, MarkerData[i].lng) // 마커의 위치
             });
 
             // 인포윈도우에 표시할 내용
-            const iwContent = '<div style="padding:5px;">' + LocationData[i].title + '</div>'
+            const iwContent = '<div style="padding:5px;">' + MarkerData[i].title + '</div>'
 
             // 마커에 표시할 인포윈도우를 생성합니다 
             const infowindow = new kakao.maps.InfoWindow({
-                content: `<div style="padding:5px;">${LocationData[i].title}</div>` + `<img src="${LocationData[i].img}" style="width:200px"/>`,
+                content: `<div style="padding:5px;">${MarkerData[i].title}</div>` + `<div>${MarkerData[i].location}</div>`,
                 removable: true
             });
 
